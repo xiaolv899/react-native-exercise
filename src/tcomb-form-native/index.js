@@ -21,7 +21,7 @@ var Person = t.struct({
     surname: t.maybe(t.String),  // an optional string
     age: t.Number,               // a required number
     rememberMe: t.Boolean,        // a boolean
-    '用户名': t.Date
+    //'用户名': t.Date
 });
 
 var options = {};

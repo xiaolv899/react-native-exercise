@@ -24,9 +24,9 @@ var DISABLED_WASH = 'rgba(255,255,255,0.25)';
 
 var TEXT_INPUT_REF = 'urlInput';
 var WEBVIEW_REF = 'webview';
-var DEFAULT_URL = 'http://www.1caifu.com';
+var DEFAULT_URL = 'http://h5.1caifu.com';
 
-const HTML = `
+var HTML = `
 <!DOCTYPE html>\n
 <html>
   <head>
@@ -62,6 +62,7 @@ const HTML = `
   </body>
 </html>
 `;
+HTML = '';
 
 var styles = StyleSheet.create({
     container: {
