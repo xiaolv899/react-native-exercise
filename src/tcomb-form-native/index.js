@@ -9,6 +9,9 @@ import React,{
     TouchableHighlight,
     Component
 } from 'react-native';
+
+import { connect } from 'react-redux';
+
 import t,{form} from 'tcomb-form-native';
 var Form = form.Form;
 
@@ -79,4 +82,6 @@ var styles = StyleSheet.create({
     }
 });
 
-export default AwesomeProject;
+export default connect()(AwesomeProject);
+
+//export default AwesomeProject;

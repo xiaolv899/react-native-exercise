@@ -288,3 +288,5 @@ export default connect(
     mapStateToProps,
     mapDispatchToProps
 )(PageResult);
+
+//export default PageResult;
