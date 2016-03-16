@@ -17,10 +17,10 @@ import {Actions} from 'react-native-router-flux';
 var ImagePickerManager = require('NativeModules').ImagePickerManager;
 
 var options = {
-    title: 'Select Avatar', // specify null or empty string to remove the title
-    cancelButtonTitle: 'Cancel',
-    takePhotoButtonTitle: 'Take Photo...', // specify null or empty string to remove this button
-    chooseFromLibraryButtonTitle: 'Choose from Library...', // specify null or empty string to remove this button
+    //title: 'Select Avatar', // specify null or empty string to remove the title
+    cancelButtonTitle: '取消',
+    takePhotoButtonTitle: '拍照', // specify null or empty string to remove this button
+    chooseFromLibraryButtonTitle: '从相册选取', // specify null or empty string to remove this button
     /*customButtons: {
      'Choose Photo from Facebook': 'fb', // [Button Text] : [String returned upon selection]
      },*/
@@ -98,7 +98,7 @@ class components extends Component {
                     <Image source={this.state.avatarSource} style={{flex:1,width:this.state.avatarWidth,height:this.state.avatarHeight}} />
                 </View>
 
-                <TouchableHighlight onPress={()=>{Actions.tabbar()}}>
+                <TouchableHighlight onPress={()=>{Actions.pop(-1)}}>
                     <Text>Back</Text>
                 </TouchableHighlight>
             </View>

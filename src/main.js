@@ -26,6 +26,8 @@ import PageResult from './example-webview/webView.js';
 import FormPage from './tcomb-form-native/index.js';
 import ImagePicker from './example-image-picker/index.js';
 import Position from './position';
+import Other from './Other';
+import Swiper from './react-native-swiper';
 
 /**
  * 配置应用程序的store
@@ -73,9 +75,11 @@ class main extends Component {
                             </Route>
                             <Route name="tab3" schema="tab" component={ImagePicker} title="Image" hideTabBar={true}/>
                             <Route name="tab4" schema="tab" component={Position} title="Position"/>
-                            <Route name="tab5" schema="tab" title="Other"/>
+                            <Route name="tab5" schema="tab" component={Other} title="Other"/>
                         </Router>
                     </Route>
+                    <Route name="imagePicker" component={ImagePicker} title="Image"/>
+                    <Route name="swiper" component={Swiper} title="swiper"/>
                 </Router>
             </Provider>
         );
