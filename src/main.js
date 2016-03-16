@@ -25,6 +25,7 @@ import {Router, Route, Schema, Animations, TabBar} from 'react-native-router-flu
 import PageResult from './example-webview/webView.js';
 import FormPage from './tcomb-form-native/index.js';
 import ImagePicker from './example-image-picker/index.js';
+import Position from './position';
 
 /**
  * 配置应用程序的store
@@ -60,7 +61,7 @@ class main extends Component {
                                 tabBarStyle={{borderTopColor:'#CCCCCC',borderTopWidth:1,backgroundColor:'white'}}>
                             <Route name="tab1" schema="tab" title="Form" defaultRoute='tab1_1'>
                                 <Router>
-                                    <Route name="tab1_1" component={FormPage} title="Tab #1_1"/>
+                                    <Route name="tab1_1" component={FormPage} title="FormPage"/>
                                     <Route name="tab1_2" component={PageResult} title="Tab #1_2"/>
                                 </Router>
                             </Route>
@@ -71,8 +72,8 @@ class main extends Component {
                                 </Router>
                             </Route>
                             <Route name="tab3" schema="tab" component={ImagePicker} title="Image" hideTabBar={true}/>
-                            <Route name="tab4" schema="tab" title="Tab #4"/>
-                            <Route name="tab5" schema="tab" title="Tab #5"/>
+                            <Route name="tab4" schema="tab" component={Position} title="Position"/>
+                            <Route name="tab5" schema="tab" title="Other"/>
                         </Router>
                     </Route>
                 </Router>
