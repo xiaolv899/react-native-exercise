@@ -21,6 +21,7 @@ class components extends Component{
             <View style={styles.container}>
                 <Button onPress={()=>{Actions.imagePicker()}}>拍照</Button>
                 <Button onPress={()=>{Actions.swiper()}}>swiper</Button>
+                <Button onPress={()=>{Actions.tabView()}}>tab view</Button>
             </View>
         );
     }

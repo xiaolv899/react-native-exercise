@@ -28,6 +28,7 @@ import ImagePicker from './example-image-picker/index.js';
 import Position from './position';
 import Other from './Other';
 import Swiper from './react-native-swiper';
+import TabView from './scrollable-tab-view';
 
 /**
  * 配置应用程序的store
@@ -80,6 +81,7 @@ class main extends Component {
                     </Route>
                     <Route name="imagePicker" component={ImagePicker} title="Image"/>
                     <Route name="swiper" component={Swiper} title="swiper"/>
+                    <Route name="tabView" component={TabView} title="TabView"/>
                 </Router>
             </Provider>
         );
